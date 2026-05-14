@@ -11,3 +11,10 @@ Open/Closed ihlali, Single responsibility ihlali, Type-Based Dispatch Anti-Patte
 
 Eksikleri
 Kodun ileri safhada çok karmaşıklaşağı konusunda beni uyarmadı veya Item sınıfında gereksiz özellikler olduğunu söylemedi.
+
+
+Faz 1
+
+Çözülen Sorunlar
+
+*Nesne yaratma karmaşası Factory Method ile çözüldü
