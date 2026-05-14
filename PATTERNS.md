@@ -1,0 +1,1 @@
+Factory method nesne kurmayı istemciden ayırıp alt sınıflara devretmeye dayanan bir metoddur. Faz 0 daki kodda olan karmaşıklık nesne üretmeyi başka bir alt sınıfa atılarak çözüldü. Artık nesne yaratmak ve özellik eklemek daha az anlaşılır ve stabil.
