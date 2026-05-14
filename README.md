@@ -1,0 +1,2 @@
+Konu: Mini Oyun Motoru
+Oyun motoru senaryosu, farklı nesne tiplerinin davranışlarını yönetmek için tasarım örüntülerinin nasıl kullanıldığını görmek açısından çok zengin bir alan sunuyor. if-else karmaşasından kurtulup daha esnek bir yapı kurmak için bu konuyu seçtim.
