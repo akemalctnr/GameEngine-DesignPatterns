@@ -19,3 +19,10 @@ Faz 1 Çözülen Sorunlar
 
 Faz 2 Çözülen Sorunlar
 Adapter ve Decorator kullanılarak sisteme yeni özellik eklemek için mevcut sınıfların değiştirilmesine olan gereklilik giderildi(OCP ihlali). Ve uyumsuz kütüphaneler sisteme dahil edildi. 
+
+
+Faz 3 Çözülen Sorunlar 
+
+Sıkı Bağlılık (Tight Coupling) giderildi Observer örüntüsü kullanılarak "Gevşek Bağlılık" sağlandı.Davranış Esnekliği Sağlandı: Hareket mantığı gibi sürekli değişebilecek özellikler Strategy örüntüsü ile sınıflardan ayrıldı.
+
+AI başlangıçta çok karmaşık bir "Event Bus" yapısı kurmamı önerdi. Ancak projenin ölçeği düşünüldüğünde, bunun kodu gereksiz yere karmaşıklaştıracağını fark edip daha sade bir Observer yapısında karar kıldım.
