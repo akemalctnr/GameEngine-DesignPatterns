@@ -1,19 +1,29 @@
-from GameObject import GameObjectFactory, LegacySoundLibrary, SoundAdapter, ShieldDecorator
+from GameObject import (
+    GameObjectFactory, KeyboardMove, PatrolMove, 
+    AchievementTracker, ShieldDecorator, 
+    LegacySoundSystem, SoundAdapter
+)
 
 if __name__ == "__main__":
-    factory = GameObjectFactory()
+
+    hero = GameObjectFactory.create_object("player", "Arishikusu")
+
+    hero.move_strategy = KeyboardMove()
     
-    hero = factory.create_object("player", "Arishikusu")
-    
+    achievements = AchievementTracker()
+    hero.add_observer(achievements)
+
     shielded_hero = ShieldDecorator(hero)
+    sound_engine = SoundAdapter("MainTheme", LegacySoundSystem())
+
+    print("\n--- Phase 3: Game Engine Final Demo ---")
     
-    old_lib = LegacySoundLibrary()
-    background_music = SoundAdapter("Epic_Theme", old_lib)
-
-    game_objects = [shielded_hero, background_music]
-
-    print("\n--- Phase 2: Structural Patterns Running ---")
-    for obj in game_objects:
-        obj.update()
-        obj.render()
-        print("-" * 30)
+    shielded_hero.update()
+    shielded_hero.notify("First Level Started!")
+    
+    print("\n--- Changing Strategy to Patrol Mode ---")
+    hero.move_strategy = PatrolMove()
+    shielded_hero.update()
+    
+    shielded_hero.render()
+    sound_engine.update()
