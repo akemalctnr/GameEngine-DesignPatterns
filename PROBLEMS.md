@@ -13,8 +13,9 @@ Eksikleri
 Kodun ileri safhada çok karmaşıklaşağı konusunda beni uyarmadı veya Item sınıfında gereksiz özellikler olduğunu söylemedi.
 
 
-Faz 1
-
-Çözülen Sorunlar
+Faz 1 Çözülen Sorunlar
 
 *Nesne yaratma karmaşası Factory Method ile çözüldü
+
+Faz 2 Çözülen Sorunlar
+Adapter ve Decorator kullanılarak sisteme yeni özellik eklemek için mevcut sınıfların değiştirilmesine olan gereklilik giderildi(OCP ihlali). Ve uyumsuz kütüphaneler sisteme dahil edildi. 
